@@ -26,6 +26,7 @@ Game::Game( MainWindow& wnd )
 	wnd( wnd ),
 	gfx( wnd )
 {
+	p.initParticle({ 100,200 }, { 2,1 });
 }
 
 void Game::Go()
@@ -38,13 +39,13 @@ void Game::Go()
 
 void Game::UpdateModel()
 {
-
+	p.updatePos(0.1);
 }
 
 
 void Game::ComposeFrame()
 {
-
+	p.drawParticle(gfx);
 }
 
 
