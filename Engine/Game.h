@@ -24,6 +24,7 @@
 #include "Mouse.h"
 #include "Graphics.h"
 #include "Particle.h"
+#include "Vec2.h"
 
 class Game
 {
@@ -46,4 +47,9 @@ private:
 	/********************************/
 
 	Particle p;
+	float xLeft = 20.0f;  
+	float xRight = 780.0f;
+	float yUp = 20.0f;
+	float yDown = 580.0f;
+
 };
