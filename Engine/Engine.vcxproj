@@ -149,6 +149,7 @@
     <ClInclude Include="Mouse.h" />
     <ClInclude Include="Particle.h" />
     <ClInclude Include="Resource.h" />
+    <ClInclude Include="Simulation.h" />
     <ClInclude Include="Sound.h" />
     <ClInclude Include="SoundEffect.h" />
     <ClInclude Include="Vec2.h" />
@@ -164,6 +165,7 @@
     <ClCompile Include="MainWindow.cpp" />
     <ClCompile Include="Mouse.cpp" />
     <ClCompile Include="Particle.cpp" />
+    <ClCompile Include="Simulation.cpp" />
     <ClCompile Include="Sound.cpp" />
     <ClCompile Include="Vec2.cpp" />
     <ClCompile Include="Vei2.cpp" />

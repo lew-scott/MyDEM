@@ -25,6 +25,7 @@
 #include "Graphics.h"
 #include "Particle.h"
 #include "Vec2.h"
+#include "Simulation.h"
 
 class Game
 {
@@ -45,11 +46,8 @@ private:
 	/********************************/
 	/*  User Variables              */
 	/********************************/
-
-	Particle p;
-	float xLeft = 20.0f;  
-	float xRight = 780.0f;
-	float yUp = 20.0f;
-	float yDown = 580.0f;
+	Vec2 screenSize = { 800.0f,600.0f };
+	Vec2 geometry = { 0.08f,0.06f };
+	Simulator s;
 
 };

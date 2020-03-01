@@ -24,9 +24,10 @@
 Game::Game( MainWindow& wnd )
 	:
 	wnd( wnd ),
-	gfx( wnd )
+	gfx( wnd ),
+	s(screenSize, geometry)
 {
-	p.initParticle({ 100,200 }, { -2,2 });
+	
 }
 
 void Game::Go()
@@ -39,18 +40,13 @@ void Game::Go()
 
 void Game::UpdateModel()
 {
-	p.updatePos(2);
-	p.checkRebound(xLeft, xRight, yUp, yDown);
+	s.runSimulation();
 }
 
 
 void Game::ComposeFrame()
 {
-	p.drawParticle(gfx);
-	gfx.Drawline({ xLeft,yUp }, { xRight,yUp }, Colors::MakeRGB(125,125,0));
-	gfx.Drawline({ xLeft,yDown }, { xRight,yDown }, Colors::MakeRGB(125, 125, 0));
-	gfx.Drawline({ xLeft,yUp }, { xLeft,yDown }, Colors::MakeRGB(125, 125, 0));
-	gfx.Drawline({ xRight,yUp }, { xRight,yDown}, Colors::MakeRGB(125, 125, 0));
+	s.DrawSimulation(gfx);
 }
 
 
