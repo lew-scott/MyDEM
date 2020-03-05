@@ -85,4 +85,9 @@ Vec2 & Vec2::rotate(float angle)
 	return *this;
 }
 
+float Vec2::Dot(const Vec2 & rhs)
+{
+	return (x * rhs.y) - (y * rhs.x);
+}
+
 

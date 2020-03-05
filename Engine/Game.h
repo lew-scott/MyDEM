@@ -47,7 +47,7 @@ private:
 	/*  User Variables              */
 	/********************************/
 	Vec2 screenSize = { 800.0f,600.0f };
-	Vec2 geometry = { 0.08f,0.06f };
+	Vec2 geometry = { 0.32f,0.24f };
 	Simulator s;
 
 };
